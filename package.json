@@ -1,0 +1,50 @@
+{
+  "name": "bionode-template",
+  "description": "Template module to use as base for quickly creating bionode modules.",
+  "version": "0.0.1",
+  "homepage": "http://github.com/bionode/bionode-template",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bmpvieira/bionode-template.git"
+  },
+  "author": {
+    "name": "Bruno Vieira",
+    "email": "mail@bmpvieira.com"
+  },
+  "dependencies": {
+    "JSONStream": "^0.8.3",
+    "through2": "^0.4.2",
+    "debug": "^1.0.2",
+    "split": "~0.3.0",
+    "browserify": "~4.2.0",
+    "uglify-js": "~2.4.14"
+  },
+  "devDependencies": {
+    "coveralls": "~2.6.1",
+    "docco": "~0.6.2",
+    "istanbul": "~0.2.4",
+    "mocha": "~1.17.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "should": "~3.0.1"
+  },
+  "keywords": [
+    "template",
+    "api",
+    "streams",
+    "client",
+    "server",
+    "cli"
+  ],
+  "main": "index.js",
+  "bin": {
+    "bionode-template": "cli.js"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && rm -rf ./coverage",
+    "coveralls": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage",
+    "build-docs": "docco ./lib/bionode-template.js",
+    "build-browser": "browserify browser.js  | uglifyjs  > bionode-template.min.js"
+  },
+  "license": "MIT"
+}
