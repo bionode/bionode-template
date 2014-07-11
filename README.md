@@ -122,7 +122,7 @@ Check [ChooseALicense.com](http://choosealicense.com/licenses/mit) for details.
 [coveralls-image]: http://coveralls.io/repos/bionode/bionode-template/badge.png
 [depstat-url]: http://david-dm.org/bionode/bionode-template
 [depstat-image]: http://david-dm.org/bionode/bionode-template.png
-[doi-url]: http://dx.doi.org/10.5281/zenodo.10610
+[doi-url]: http://dx.doi.org/10.5281/zenodo.10853
 [doi-image]: https://zenodo.org/badge/3959/bionode/bionode-template.png
 
 [![Bitdeli Badge](http://d2weczhvl823v0.cloudfront.net/bionode/bionode-template/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
