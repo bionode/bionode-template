@@ -21,7 +21,7 @@ That is:
 * Provide Node.js [Streams](http://nodejs.org/api/stream.html);
 * Provide a [Command Line Interface](http://en.wikipedia.org/wiki/Command-line_interface) compatible with [Unix pipes](http://en.wikipedia.org/wiki/Pipeline_%28Unix%29);
 * If possible, work client-side (browser) using [browserify](https://github.com/substack/node-browserify);
-* Provide testing (preferably with [mocha](https://github.com/visionmedia/mocha) and [should](https://github.com/visionmedia/should.js));
+* Provide testing (preferably with [tape](http://github.com/substack/tape) and [testling](https://ci.testling.com));
 * Provide code coverage (preferably with [istanbul](https://github.com/gotwarlost/istanbul));
 * Provide code with comments and documentation (preferably with [docco](https://github.com/jashkenas/docco));
 * [KISS](http://en.wikipedia.org/wiki/KISS_principle) and don't [abuse objects](http://timruffles.github.io/you-probably-dont-want-an-object);
