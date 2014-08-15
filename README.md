@@ -88,6 +88,15 @@ Please write unit tests for your code, and check that everything works by runnin
 $ npm test
 ```
 
+To test on the browser:
+
+```sh
+$ npm run test-browser
+# if you get "No headless browser found" do:
+$ npm install -g phantomjs
+$ rm ~/.config/browser-launcher/config.json
+```
+
 Please also check for code coverage:
 
 ```sh

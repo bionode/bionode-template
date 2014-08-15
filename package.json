@@ -12,22 +12,25 @@
     "email": "mail@bmpvieira.com"
   },
   "dependencies": {
-    "JSONStream": "^0.9.0",
     "through2": "^0.6.1",
-    "debug": "^1.0.4",
-    "split": "~0.3.0",
-    "browserify": "~5.10.0",
-    "uglify-js": "~2.4.15"
+    "debug": "^1.0.4"
   },
   "devDependencies": {
+    "split": "~0.3.0",
+    "browserify": "^5.10.0",
+    "uglify-js": "~2.4.15",
     "coveralls": "~2.11.1",
-    "docco": "~0.6.3",
     "istanbul": "~0.3.0",
-    "mocha": "~1.21.4",
-    "mocha-lcov-reporter": "0.0.1",
-    "should": "~4.0.4"
+    "tape": "^2.14.0",
+    "tap-spec": "^0.2.0",
+    "testling": "^1.7.0",
+    "docco": "~0.6.3"
   },
   "keywords": [
+    "bio",
+    "biology",
+    "bioinformatics",
+    "bionode",
     "template",
     "api",
     "streams",
@@ -40,11 +43,12 @@
     "bionode-template": "cli.js"
   },
   "scripts": {
-    "test": "mocha --reporter spec",
-    "coverage": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && rm -rf ./coverage",
-    "coveralls": "istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage",
-    "build-docs": "docco ./lib/bionode-template.js",
-    "build-browser": "browserify browser.js  | uglifyjs  > bionode-template.min.js"
+    "test": "node test/bionode-template.js | tap-spec",
+    "test-browser": "browserify test/bionode-template.js | testling | tap-spec",
+    "coverage": "istanbul cover test/bionode-template.js --report lcovonly -- | tap-spec && rm -rf ./coverage",
+    "coveralls": "istanbul cover test/bionode-template.js --report lcovonly -- | tap-spec && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage",
+    "build-browser": "browserify index.js -r ./index.js:bionode-template | uglifyjs > bionode-template.min.js",
+    "build-docs": "docco ./lib/bionode-template.js"
   },
   "license": "MIT"
 }
