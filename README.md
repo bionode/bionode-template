@@ -46,22 +46,17 @@ $ npm install bionode-template
 ```
 To use it as a command line tool, you can install it globally by adding ```-g``` .
 
-Alternatively, just include `bionode-template.min.js` via a `<script/>` in your page.
+Alternatively, just include `bionode-template.min.js` via a `<script/>` in your page or use [Browserify](http://browserify.org).
 
 Usage
 -----
 
-If you are using ```bionode-template``` with Node.js, you can require the module:
+ You can require the module in Node.js or in a browser:
 
 ```js
 var template = require('bionode-template')
 template.greet('World').on('data', console.log)
 //=> {"greeting":"Hello World"}
-```
-
-In-browser, bionode is available as a global variable.
-```js
-bionode.template.greet('World').on('data', console.log)
 ```
 
 Please read the [documentation](http://rawgit.com/bionode/bionode-template/master/docs/bionode-template.html) for the methods exposed by bionode-template.
