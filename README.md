@@ -6,6 +6,7 @@
   <a href="http://bionode.io/">bionode.io</a>
 </p>
 # bionode-template
+> Template module to use as a base for quickly creating bionode modules.
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -13,8 +14,6 @@
 [![Dependency Status][depstat-image]][depstat-url]
 [![Gitter chat][gitter-image]][gitter-url]
 [![DOI][doi-image]][doi-url]
-
-> Template module to use as a base for quickly creating bionode modules.
 
 Principles
 ----------
