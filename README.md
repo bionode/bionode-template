@@ -133,5 +133,5 @@ Check [ChooseALicense.com](http://choosealicense.com/licenses/mit) for details.
 [depstat-image]: http://img.shields.io/david/bionode/bionode-template.svg?style=flat
 [gitter-image]: http://img.shields.io/badge/gitter-bionode/bionode--template-brightgreen.svg?style=flat
 [gitter-url]: https://gitter.im/bionode/bionode-template
-[doi-url]: http://dx.doi.org/10.5281/zenodo.10853
-[doi-image]: http://img.shields.io/badge/doi-10.5281/zenodo.10853-blue.svg?style=flat
+[doi-url]: http://dx.doi.org/10.5281/zenodo.11297
+[doi-image]: http://img.shields.io/badge/doi-10.5281/zenodo.11297-blue.svg?style=flat
