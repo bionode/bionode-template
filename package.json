@@ -1,7 +1,7 @@
 {
   "name": "bionode-template",
   "description": "Template module to use as base for quickly creating bionode modules.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "http://github.com/bionode/bionode-template",
   "repository": {
     "type": "git",
