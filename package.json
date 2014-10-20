@@ -5,7 +5,7 @@
   "homepage": "http://github.com/bionode/bionode-template",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bmpvieira/bionode-template.git"
+    "url": "git://github.com/bionode/bionode-template.git"
   },
   "author": {
     "name": "Bruno Vieira",
