@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "through2": "^0.6.1",
-    "debug": "^1.0.4"
+    "debug": "^1.0.4",
+    "JSONStream": "^0.10.0"
   },
   "devDependencies": {
     "split": "~0.3.0",
