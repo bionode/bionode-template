@@ -5,18 +5,22 @@
   <br/>
   <a href="http://bionode.io/">bionode.io</a>
 </p>
+
+
 # bionode-template
+
 > Template module to use as a base for quickly creating bionode modules.
 
-[![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Coveralls Status][coveralls-image]][coveralls-url]
-[![Dependency Status][depstat-image]][depstat-url]
-[![Gitter chat][gitter-image]][gitter-url]
-[![DOI][doi-image]][doi-url]
+[![npm](https://img.shields.io/npm/v/bionode-template.svg?style=flat-square)](http://npmjs.org/package/bionode-template)
+[![Travis](https://img.shields.io/travis/bionode/bionode-template.svg?style=flat-square)](https://travis-ci.org/bionode/bionode-template)
+[![Coveralls](https://img.shields.io/coveralls/bionode/bionode-template.svg?style=flat-square)](http://coveralls.io/r/bionode/bionode-template)
+[![Dependencies](http://img.shields.io/david/bionode/bionode-template.svg?style=flat-square)](http://david-dm.org/bionode/bionode-template)
+[![npm](https://img.shields.io/npm/dt/bionode-template.svg?style=flat-square)](https://www.npmjs.com/package/bionode-template)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/bionode/bionode)
 
-Principles
-----------
+
+## Principles
+
 This provides a quick template to build a bionode module. A bionode module should follow the [Unix philosophy](http://en.wikipedia.org/wiki/Unix_philosophy) and play nice with [Node.js](http://nodejs.org).
 
 That is:
@@ -36,8 +40,8 @@ To try to maximize the compatibility of the new module and anticipate possible u
 
 The following sections should be adapted and included in the README.md file.
 
-Install
--------
+
+## Install
 
 Install ```bionode-template``` with [npm](//npmjs.org):
 
@@ -61,77 +65,32 @@ template.greet('World').on('data', console.log)
 
 Please read the [documentation](http://rawgit.com/bionode/bionode-template/master/docs/bionode-template.html) for the methods exposed by bionode-template.
 
+
 ### Command line examples
+
 ```sh
 $ bionode-template greet World
 $ echo World | bionode-template greet
 ```
 
+
 ### Usage with [Dat](http://dat-data.com)
+
 ```sh
 echo World | bionode-template greet | dat import --json
 ```
 
-Contributing
-------------
 
-To contribute, clone this repo locally and commit your code on a separate branch.
+## Contributing
 
-Please write unit tests for your code, and check that everything works by running the following before opening a pull-request:
+We welcome all kinds of contributions at all levels of experience, please read the [CONTRIBUTING.md](CONTRIBUTING.md) to get started!
 
-```sh
-$ npm test
-```
 
-To test on the browser:
+## Communication channels
 
-```sh
-$ npm run test-browser
-# if you get "No headless browser found" do:
-$ npm install -g phantomjs
-$ rm ~/.config/browser-launcher/config.json
-```
+Don't be shy! Come talk to us :smiley:
 
-Please also check for code coverage:
-
-```sh
-$ npm run coverage
-```
-
-To rebuild and minify the module for the browser:
-
-```sh
-$ npm run build-browser
-```
-
-To rebuild the documentation using the comments in the code:
-
-```sh
-$ npm run build-docs
-```
-Check the [issues](http://github.com/bionode/bionode-template/issues) for ways to contribute.
-
-Contacts
---------
-Bruno Vieira <[mail@bmpvieira.com](mailto:mail@bmpvieira.com)> [@bmpvieira](//twitter.com/bmpvieira)
-
-Yannick Wurm ([yannick.poulet.org](http://yannick.poulet.org)) [@yannick__](//twitter.com/yannick__)
-
-Licenses
---------
-
-bionode-template is licensed under the [MIT](https://raw.github.com/bionode/bionode-template/master/LICENSE) license.  
-Check [ChooseALicense.com](http://choosealicense.com/licenses/mit) for details.
-
-[npm-url]: http://npmjs.org/package/bionode-template
-[npm-image]: http://img.shields.io/npm/v/bionode-template.svg?style=flat
-[travis-url]: http:////travis-ci.org/bionode/bionode-template
-[travis-image]: http://img.shields.io/travis/bionode/bionode-template.svg?style=flat
-[coveralls-url]: http:////coveralls.io/r/bionode/bionode-template
-[coveralls-image]: http://img.shields.io/coveralls/bionode/bionode-template.svg?style=flat
-[depstat-url]: http://david-dm.org/bionode/bionode-template
-[depstat-image]: http://img.shields.io/david/bionode/bionode-template.svg?style=flat
-[gitter-image]: http://img.shields.io/badge/gitter-bionode/bionode--template-brightgreen.svg?style=flat
-[gitter-url]: https://gitter.im/bionode/bionode-template
-[doi-url]: http://dx.doi.org/10.5281/zenodo.11297
-[doi-image]: http://img.shields.io/badge/doi-10.5281/zenodo.11297-blue.svg?style=flat
+* **Email** [mail@bionode.io](mailto:mail@bionode.io)
+* **Chat room** [http://gitter.im/bionode/bionode-template](http://gitter.im/bionode/bionode-template)
+* **IRC** #bionode on Freenode
+* **Twitter** [@bionode](http://twitter.com/@bionode)
