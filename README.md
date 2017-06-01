@@ -16,7 +16,7 @@
 [![Coveralls](https://img.shields.io/coveralls/bionode/bionode-template.svg?style=flat-square)](http://coveralls.io/r/bionode/bionode-template)
 [![Dependencies](http://img.shields.io/david/bionode/bionode-template.svg?style=flat-square)](http://david-dm.org/bionode/bionode-template)
 [![npm](https://img.shields.io/npm/dt/bionode-template.svg?style=flat-square)](https://www.npmjs.com/package/bionode-template)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/bionode/bionode-template)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/bionode/bionode)
 
 
 ## Principles
